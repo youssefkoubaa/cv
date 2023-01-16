@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            content: '';
+        }
+
+        .swiper-portfolio-icon {
+            font-size: 2rem;
+            color: var(--first-color);
+        }
+
+        .swiper-button-prev {
+            left: -.5rem;
+        }
+
+        .swiper-button-next {
+            right: -.5rem;
+        }
+
+        .swiper-container-horizental>.swiper-pagination-bullets {
+            bottom: -2.5rem;
+
+        }
+        .swiper-button-bullet-active{
+            background-color: hsl(var(--hue-color), 69%, 61%);
+        }
+        .swiper-button-prev,
+        .swiper-button-next,
+        .swiper-pagination-bullet{
+            outline: none;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 20px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 356px;
+            height: 356px;
+            object-fit: cover;
+        }
+        .swiper-pagination{
+           display: block;
+           width: 100px;
+           padding-bottom: 50px;
+        }
+          
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav_logo">Youssef</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="../index.html" class="nav_link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="../page html/about.html" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="../page html/skills.html" class="nav_link">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="../page html/service.html" class="nav_link">
+                            <i class="uil uil-briefcase-alt nav_icon"></i> Services
+
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="portfolio.html" class="nav_link active-link">
+                            <i class="uil uil-scenery nav_icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="contact-me.html" class="nav_link">
+                            <i class="uil uil-message nav_icon"></i> Contact-me
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="quiz.html" class="nav_link">
+                            <i class="uil uil-question-circle nav_icon"></i> Quiz
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle"> Most recent work</span>
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--===================port 1==============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="../image/portfolio.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and
+                                animated intersections.</p>
+                            <a href="#" class="button button--flex button-small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                    <!--===================port 2==============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="../image/portf2.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Brand design</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and
+                                animated intersections.</p>
+                            <a href="#" class="button button--flex button-small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                    <!--===================port 1==============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="../image/portf3.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Online Store</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and
+                                animated intersections.</p>
+                            <a href="#" class="button button--flex button-small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title"> You have a new project</h2>
+                        <p class="project__description">Contact me now and get 30% discount on your new project.</p>
+                        <a href="contact-me.html" class="button button--flex button--while">
+                            Contact me
+                            <i class="uil uil-message project__icon button__icon"></i>
+
+                        </a>
+                    </div>
+                    <img src="../image/chane.jpg" alt="" class="project__img">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Youssef</h1>
+                    <span class="footer__subtitle">Fronted developer</span>
+
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">contactme</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/youssef.koubaa28" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/koubaa_youcef/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/Koubaayoussef2" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169, Bedimcode. All right reserved</p>
+        </div>
+    </footer>
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+
+    </a>
+    <script src="../js/main.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.portfolio__container', {
+            cssMode: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+    </script>
+
+
+</body>
+
+</html>
